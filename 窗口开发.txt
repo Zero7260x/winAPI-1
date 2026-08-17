@@ -2,20 +2,7 @@
 #include"resource1.h"
 //状态参数
 int g_state = 0;
-//菜单消息处理函数
-void OnCommand(WPARAM wParam)
-{
-	WORD id = LOWORD(wParam);
-	switch (id)
-	{
-	case ID_40001:
-		MessageBox(NULL, "新建", "温馨提示", MB_OK);
-		break;
-	case ID_40002:
-		MessageBox(NULL, "打开", "温馨提示", MB_OK);
-		break;
-	}
-}
+
 //回调函数
 LRESULT CALLBACK WndProc(HWND hwnd,
     UINT uMsg, 
